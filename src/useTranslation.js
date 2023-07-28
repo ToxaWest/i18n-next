@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { TranslationProvider } from "./provider";
-export default function useTranslation(key) {
+export default function (key) {
     const {
         messages = {}
     } = useContext(TranslationProvider);

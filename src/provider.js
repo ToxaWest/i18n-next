@@ -1,6 +1,6 @@
 import { createContext } from "react";
 export const TranslationProvider = /*#__PURE__*/createContext({});
-export default function Translation({
+export default function ({
                                         children,
                                         messages,
                                         locale
