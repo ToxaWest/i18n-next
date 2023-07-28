@@ -1,6 +1,7 @@
-import { useContext } from "react";
-import { TranslationProvider } from "./provider";
-export default function (key) {
+const { useContext } = require("react");
+const { TranslationProvider } = require("./provider");
+
+module.exports = function (key) {
     const {
         messages = {}
     } = useContext(TranslationProvider);

@@ -1,6 +1,6 @@
-import { createContext } from "react";
+const { createContext } = require("react");
 export const TranslationProvider = /*#__PURE__*/createContext({});
-export default function ({
+module.exports = function ({
                                         children,
                                         messages,
                                         locale
