@@ -9,7 +9,6 @@
     <Translation messages={pageProps.messages} locale={'uk'}>
         <Component {...pageProps} />
     </Translation>
-}
 
 #### 3) Add hook to your component
 ##### Import:
@@ -41,8 +40,3 @@
             }
         }
     }
-
-### ! Important.
-##### 1 ) `desktop` is default value using after all breakpoints
-##### 2 ) Props changes only if breakpoint change.
-##### 3 ) Do not init `Resize(props.dispatch)` in all components. Only in main.
