@@ -2,24 +2,14 @@
   "name": "@west.kh/i18n-next",
   "version": "1.0.0",
   "description": "Simple i18n for nextjs",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "publish:npm": "rm -rf dist && mkdir dist &&  babel src -d dist --copy-files"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "west",
-  "babel": {
-    "presets": [
-      "@babel/preset-react"
-    ]
-  },
   "private": false,
   "license": "ISC",
-  "devDependencies": {
-    "@babel/cli": "^7.22.9",
-    "@babel/preset-react": "^7.22.5"
-  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/ToxaWest/i18n-next.git"

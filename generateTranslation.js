@@ -1,5 +1,5 @@
 const fs = require('fs');
-const config = require('./translationConfig.json');
+const config = require('../../../translationConfig.json') || {lang: ['en'], extensions: ['js']};
 
 function getFiles(dir, files = []) {
     const fileList = fs.readdirSync(dir);
