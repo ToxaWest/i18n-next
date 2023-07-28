@@ -1,6 +1,6 @@
 {
   "name": "@west.kh/i18n-next",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Simple i18n for nextjs",
   "main": "src/index.js",
   "scripts": {
