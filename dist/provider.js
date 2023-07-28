@@ -1,15 +1,12 @@
-"use strict";
-
 const {
   createContext
 } = require("react");
 const TranslationProvider = /*#__PURE__*/createContext({});
-function Translation(_ref) {
-  let {
-    children,
-    messages,
-    locale
-  } = _ref;
+function Translation({
+  children,
+  messages,
+  locale
+}) {
   return /*#__PURE__*/React.createElement(TranslationProvider.Provider, {
     value: {
       messages,

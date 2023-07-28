@@ -1,5 +1,3 @@
-"use strict";
-
 const getMessages = require('./getMessages');
 const {
   Translation

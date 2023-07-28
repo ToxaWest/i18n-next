@@ -1,5 +1,3 @@
-"use strict";
-
 const {
   useContext
 } = require("react");
