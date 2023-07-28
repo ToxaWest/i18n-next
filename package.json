@@ -22,11 +22,15 @@
   "babel": {
     "presets": [
       "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-syntax-import-attributes"
     ]
   },
   "homepage": "https://github.com/ToxaWest/i18n-next#readme",
   "devDependencies": {
     "@babel/cli": "^7.22.9",
-    "@babel/preset-react": "^7.22.5"
+    "@babel/preset-react": "^7.22.5",
+    "@babel/plugin-syntax-import-attributes": "^7.22.5"
   }
 }

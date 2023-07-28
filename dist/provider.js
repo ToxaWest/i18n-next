@@ -1,13 +1,14 @@
 const {
-  createContext
+  createContext,
+  createElement
 } = require("react");
-const TranslationProvider = /*#__PURE__*/createContext({});
+const TranslationProvider = createContext({});
 function Translation({
   children,
   messages,
   locale
 }) {
-  return /*#__PURE__*/React.createElement(TranslationProvider.Provider, {
+  return createElement(TranslationProvider.Provider, {
     value: {
       messages,
       locale
