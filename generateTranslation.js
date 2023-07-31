@@ -27,10 +27,10 @@ async function checkIfContainsAsync(filename) {
             }
             const [a] = contents.matchAll(/useTranslation\(\'(.*)\'\)/gm);
             file.name = a[1];
-            const b = [...contents.matchAll(/t\(\'(.*)\'\)/gm)]
+            const b = [...contents.matchAll(/({| |:)t\(\'(.*)\'\)/gm)]
             b.forEach(c => {
-                if (c[1]) {
-                    file.keys.push(c[1])
+                if (c[2]) {
+                    file.keys.push(c[2])
                 }
             })
             return file;

@@ -6,9 +6,16 @@
     npm i --save @west.kh/i18n-next
 #### 2) Wrap yor component with `Translation` 
 ##### Example:
-    <Translation messages={pageProps.messages} locale={'uk'}>
-        <Component {...pageProps} />
-    </Translation>
+
+    function MyApp(props) {
+        const {Component, pageProps, router: {locale}} = props;
+
+        return (
+            <Translation messages={pageProps.messages} locale={locale}>
+                <Component {...pageProps} />
+            </Translation>
+        )
+    }
 
 #### 3) Add hook to your component
 ##### Import:
